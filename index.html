@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO META TAGS -->
+    <title>SecureGen – Ultra-Strong Password Generator</title>
+    <meta name="description"
+        content="SecureGen is a powerful, secure, and modern password generator with cryptographic randomness, pronounceable mode, and instant copy. Create unbreakable passwords now." />
+    <meta name="keywords"
+        content="password generator, secure password, strong password, random password, cryptography, generate password" />
+    <meta name="author" content="SecureGen by Saptadeep" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+
+    <!-- Lottie & GSAP Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.9.6/lottie.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="SecureGen – Ultra-Strong Password Generator" />
+    <meta property="og:description" content="Generate strong cryptographic passwords instantly." />
+    <meta property="og:type" content="website" />
+</head>
+
+<body>
+    <!-- ===================== NAVBAR ===================== -->
+    <nav class="navbar glass" role="navigation">
+        <div class="nav-left">
+            <img src="assets/images/logo.png" class="nav-logo" alt="SecureGen Logo" />
+            <span class="brand-name">SecureGen</span>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="nav-links" id="navMenu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#generator">Generator</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#generator" class="nav-cta">Try for Free</a></li>
+        </ul>
+
+        <!-- Hamburger / Close Button -->
+        <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile Navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#generator">Generator</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#generator" class="nav-cta">Try for Free</a></li>
+            </ul>
+        </nav>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <header id="home" class="hero">
+        <h1 class="hero-title">
+            <span>Generate</span>
+            <span>Ultra-Strong,</span>
+            <span>Unbreakable</span>
+            <span>Passwords</span>
+            <span>for</span>
+            <span>Ultimate</span>
+            <span>Online</span>
+            <span>Protection</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            Fast • Secure • Clean • Elegant <br>
+            Your modern password generator for safer digital life.
+        </p>
+
+        <a href="#generator" class="hero-btn">Start Generating →</a>
+    </header>
+
+    <!-- ===================== GENERATOR SECTION ===================== -->
+    <main id="generator" class="container">
+        <section class="card glass">
+            <h2>Generate Your Passwords</h2>
+
+            <div class="preview glass-soft">
+                <span id="pw" class="pw blurred">Click "Generate"</span>
+
+                <div class="preview-actions">
+                    <button id="togglePw" class="btn ghost">Show</button>
+                    <button id="copy" class="btn primary">Copy</button>
+                </div>
+            </div>
+
+            <div class="controls">
+                <label class="row">
+                    <span>Password Length</span>
+                    <div class="range-wrapper">
+                        <input id="len" type="range" min="4" max="30" value="14" />
+                        <span id="lenValue">14</span>
+                    </div>
+                </label>
+
+                <div class="grid">
+                    <label class="switch"><input id="upper" type="checkbox" checked /> Uppercase</label>
+                    <label class="switch"><input id="lower" type="checkbox" checked /> Lowercase</label>
+                    <label class="switch"><input id="number" type="checkbox" checked /> Numbers</label>
+                    <label class="switch"><input id="symbol" type="checkbox" checked /> Symbols</label>
+                </div>
+
+                <label class="row">
+                    <span>Easy Pronounceable</span>
+                    <input id="easy" type="checkbox" />
+                </label>
+
+                <button id="generate" class="btn generate">Generate</button>
+
+                <p class="strength">Strength: <strong id="strength-value">—</strong></p>
+            </div>
+        </section>
+
+        <section class="card glass small">
+            <h3>Password History</h3>
+            <ul id="historyList" class="history"></ul>
+        </section>
+    </main>
+
+    <!-- ===================== FEATURES ===================== -->
+    <!-- FEATURES SECTION -->
+    <section id="features" class="features">
+        <h2>Why SecureGen?</h2>
+
+        <div class="features-grid">
+
+            <div class="feature-card glass-soft">
+                <h3>Strong Security</h3>
+                <p>
+                    Built with industry-grade cryptographic randomness to ensure every password is unique,
+                    unpredictable, and highly resistant to brute-force attacks.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>Lightning Fast</h3>
+                <p>
+                    Generate ultra-complex passwords in milliseconds. No delays—just instant, on-demand
+                    protection whenever you need it.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>Smart Strength Meter</h3>
+                <p>
+                    Our intelligent analyzer evaluates password complexity in real time and provides clear
+                    feedback to help you create the strongest possible combinations.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>Pronounceable Mode</h3>
+                <p>
+                    Create highly secure passwords that are also easy to remember using our adaptive
+                    pronounceability algorithm—perfect balance of security and usability.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>Customizable Rules</h3>
+                <p>
+                    Choose length, character types, symbols, patterns, or advanced settings to tailor
+                    passwords exactly the way you want them.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>One-Click Copy</h3>
+                <p>
+                    Copy generated passwords instantly with a single tap—fast, smooth, and frustration-free
+                    for seamless workflow.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>Secure History</h3>
+                <p>
+                    Temporarily store your recently generated passwords locally in your browser with
+                    zero server storage—privacy-first design.
+                </p>
+            </div>
+
+            <div class="feature-card glass-soft">
+                <h3>Mobile-Friendly Design</h3>
+                <p>
+                    Fully responsive layout ensures you can generate strong passwords anytime—from desktop,
+                    tablet, or mobile.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== FAQ SECTION ===================== -->
+    <section id="faq" class="faq-section">
+        <h2 class="faq-title">Frequently Asked Questions</h2>
+
+        <div class="faq-container">
+
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    How secure are the passwords generated by SecureGen?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        SecureGen uses cryptographically strong randomness (CSPRNG) ensuring
+                        every generated password is unpredictable, unique, and nearly
+                        impossible to brute-force.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Does SecureGen store my passwords?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        No. SecureGen never stores any password on a server. Everything
+                        happens locally in your browser for maximum privacy.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Is SecureGen free to use?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes, SecureGen is completely free to use with no hidden charges.
+                    </p>
+                </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <button class="faq-question">
+                    Can I generate pronounceable or easy-to-remember passwords?
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>
+                        Yes! Just enable the “Easy Pronounceable” mode to create strong yet
+                        memorable passwords.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="footer" class="footer-section">
+        <div class="footer-container">
+
+            <div class="footer-col">
+                <h2 class="footer-logo">SecureGen</h2>
+                <p class="footer-about">
+                    A futuristic password generator delivering strong, unbreakable passwords for the modern world.
+                </p>
+
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:support@securegen.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#generator">Try Generator</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#faq">How secure are the passwords?</a></li>
+                    <li><a href="#faq">Is SecureGen free?</a></li>
+                    <li><a href="#faq">Can I save password history?</a></li>
+                    <li><a href="#faq">Do you store passwords?</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact</h3>
+
+                <div class="social-icons">
+                    <!-- GitHub -->
+                    <a href="https://github.com/saptads14" target="_blank" aria-label="GitHub">
+                        <!-- SVG kept exactly same -->
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            role="img">
+                            <title>GitHub</title>
+                            <path
+                                d="M12 .5C5.73.5.5 5.74.5 12.02c0 5.12 3.29 9.46 7.86 10.99.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.36-1.3-1.72-1.3-1.72-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.78 2.73 1.27 3.4.97.11-.75.41-1.27.75-1.56-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.45.11-3.02 0 0 .97-.31 3.18 1.18a11.02 11.02 0 0 1 2.9-.39c.98.01 1.97.13 2.9.39 2.2-1.5 3.17-1.18 3.17-1.18.63 1.57.23 2.73.11 3.02.74.81 1.19 1.83 1.19 3.09 0 4.43-2.69 5.41-5.25 5.69.42.36.8 1.08.8 2.18 0 1.57-.01 2.84-.01 3.23 0 .31.21.68.8.56C20.21 21.48 23.5 17.14 23.5 12.02 23.5 5.74 18.27.5 12 .5z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- Email -->
+                    <a href="mailto:saptadeephalder2004@gmail.com" aria-label="Email">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            role="img">
+                            <title>Email</title>
+                            <path
+                                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5L4 8V6l8 5 8-5v2z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/saptadeep-halder04/" target="_blank" aria-label="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            role="img">
+                            <title>LinkedIn</title>
+                            <path
+                                d="M4.98 3.5C3.88 3.5 3 4.37 3 5.47c0 1.1.88 1.98 1.98 1.98h.02C6.08 7.45 7 6.57 7 5.47 7 4.37 6.12 3.5 4.98 3.5zM3.5 8.99h3v11.51h-3V8.99zM9.5 8.99h2.86v1.58h.04c.4-.76 1.38-1.56 2.85-1.56C18.93 8.01 21 9.93 21 13.6v6.9h-3V14.6c0-2.15-1.15-3.15-2.68-3.15-1.23 0-1.97.83-2.29 1.63-.12.29-.15.69-.15 1.09v6.35h-3V8.99z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer-bottom">© 2025 SecureGen by Saptadeep</p>
+        </div>
+
+    </footer>
+
+    <!-- Copy Sound -->
+    <audio id="copySound">
+        <source src="assets/audio/sound.mp3" type="audio/wav" />
+    </audio>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/a2d9d6c4f6.js" crossorigin="anonymous"></script>
+
+    <!-- MAIN SCRIPT -->
+    <script src="assets/js/script.js"></script>
+
+    <div id="toast" class="toast">Copied!</div>
+
+</body>
+
+</html>
