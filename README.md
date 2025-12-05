@@ -30,7 +30,7 @@ StrongGrid is a fast, secure, and privacy-first password generator web app that 
 2. Select your desired options:  
    - Password length  
    - Include uppercase, lowercase, numbers, symbols  
-   - (Optional) Enable “Pronounceable / Easy-to-remember” mode  
+   - (Optional) Enable “Pronounceable" mode  
 3. Click **“Generate”** — your password will appear immediately.  
 4. Click **“Copy”** to copy the password to clipboard (or copy manually).  
 5. (Optional) View recent history (stored locally) for convenience.  
@@ -59,7 +59,7 @@ PASSWORD GENERATOR
 
 ## 📄 Why Use StrongGrid  
 
-- Weak or reused passwords are a leading cause of data breaches. A properly generated, high-entropy password — long, complex, and unique — makes brute-force or dictionary attacks impractical. :contentReference[oaicite:1]{index=1}  
+- Weak or reused passwords are a leading cause of data breaches. A properly generated, high-entropy password — long, complex, and unique — makes brute-force or dictionary attacks impractical.
 - StrongGrid allows you to generate such passwords instantly, with full control and no external dependencies or storage.  
 
 ---
@@ -68,7 +68,7 @@ PASSWORD GENERATOR
 
 - All password generation is done **locally in your browser**. **No password or user data is sent to any server.**  
 - Browser-local password history (if used) is stored only temporarily and not transmitted elsewhere.  
-- Always use different passwords for different accounts, and avoid re-using generated passwords across multiple services. :contentReference[oaicite:2]{index=2}  
+- Always use different passwords for different accounts, and avoid re-using generated passwords across multiple services. 
 
 ---
 
