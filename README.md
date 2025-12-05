@@ -57,6 +57,32 @@ PASSWORD GENERATOR
 
 ---
 
+▶️ **How to Run Locally**
+Step 1: Download or Clone the Project
+```bash
+git clone https://github.com/saptads14/StrongGrid.git
+```
+Option 2 — Download ZIP:
+ - Go to your GitHub repo
+ - Click Code → Download ZIP
+ - Extract the ZIP folder
+Step 2: Open the Project Folder
+```bash
+StrongGrid/
+```
+Step 3: Run the Website Locally
+Method 1 — Just double-click: `index.html`
+Method 2 — Run with VS Code Live Server (Recommended)
+If you're using VS Code, do this:
+Install the extension Live Server
+Right-click index.html
+Select "Open with Live Server"
+Your website will run at: 
+```bash
+http://127.0.0.1:5500/
+```
+---
+
 ## 📄 Why Use StrongGrid  
 
 - Weak or reused passwords are a leading cause of data breaches. A properly generated, high-entropy password — long, complex, and unique — makes brute-force or dictionary attacks impractical.
