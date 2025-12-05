@@ -59,6 +59,7 @@ PASSWORD GENERATOR
 
 ▶️ **How to Run Locally**
 Step 1: Download or Clone the Project
+Option 1 — Clone using Git:
 ```bash
 git clone https://github.com/saptads14/StrongGrid.git
 ```
