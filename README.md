@@ -38,4 +38,43 @@ StrongGrid is a fast, secure, and privacy-first password generator web app that 
 ---
 
 ## 📦 Project Structure  
+```bash
+PASSWORD GENERATOR
+│
+├── assets
+│   ├── audio
+│   │   └── sound.mp3
+│   ├── css
+│   │   └── style.css
+│   └── images
+│       └── logo.png
+│
+├── js
+│   └── script.js
+│
+└── index.html
+```
 
+---
+
+## 📄 Why Use StrongGrid  
+
+- Weak or reused passwords are a leading cause of data breaches. A properly generated, high-entropy password — long, complex, and unique — makes brute-force or dictionary attacks impractical. :contentReference[oaicite:1]{index=1}  
+- StrongGrid allows you to generate such passwords instantly, with full control and no external dependencies or storage.  
+
+---
+
+## ⚠️ Security & Privacy Considerations  
+
+- All password generation is done **locally in your browser**. **No password or user data is sent to any server.**  
+- Browser-local password history (if used) is stored only temporarily and not transmitted elsewhere.  
+- Always use different passwords for different accounts, and avoid re-using generated passwords across multiple services. :contentReference[oaicite:2]{index=2}  
+
+---
+
+## 🙋‍♂️ Author & License  
+
+**Author:** Saptadeep  
+**License:** MIT
+
+---
