@@ -39,7 +39,7 @@ StrongGrid is a fast, secure, and privacy-first password generator web app that 
 
 ## 📦 Project Structure  
 ```bash
-PASSWORD GENERATOR
+StrongGrid
 │
 ├── assets
 │   ├── audio
