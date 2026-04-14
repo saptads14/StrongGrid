@@ -1,7 +1,7 @@
 # StrongGrid 🔐  
 
 **StrongGrid** — Ultra-Strong Password Generator  
-Live demo: https://saptads14.github.io/StrongGrid/  
+Live demo: https://saptads14.github.io/StrongGrid/
 
 ---
 
